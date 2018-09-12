@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 {% block title %}blog titles{% endblock %}
 
 {% block content %}
@@ -9,14 +10,17 @@
     <div class="col-xs-12 col-md-8">
         <ul>
             {% for blog in blogs %}
-                <li><a href="{{ blog.title }}">{{ blog.title }}</a></li>
+               <h3>
+                   <li><a href="{{ blog.id }}">{{ blog.title }}</a></li>
+               </h3>
             {% endfor %}
         </ul>
     </div>
     <div class="col-xs-6 col-md-4">
         <h2>广告</h2>
         <p>学习django www.itdiffer.com</p>
-        <img width="2000px" src="https://img-ask.csdn.net/upload/201803/18/1521368429_342791.jpg"
+        <img src="{% static '/images/newton.jpg' %}" width="300px">
+      <!--  <img width="2000px" src="https://img-ask.csdn.net/upload/201803/18/1521368429_342791.jpg"> -->
     </div>
 </div>
 {% endblock %}
