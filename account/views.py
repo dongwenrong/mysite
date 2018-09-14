@@ -41,7 +41,7 @@ def register(request):
             new_profile.save()
             UserInfo.objects.create(user=new_user)
             #return HttpResponse("successfully")
-            return HttpResponseRedirect(reverse("account:user_login"))
+            return HttpResponseRedirect(reverse("account:user_login")) #通过reverse()对url的name进行解析
         else:
             return HttpResponse("sorry, your can not register.")
     else:
