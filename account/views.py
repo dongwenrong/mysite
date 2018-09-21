@@ -99,5 +99,3 @@ def my_image(request):
     else:
         return render(request, 'account/imagecrop.html',)
 
-def pwd_reset(request):
-    return  HttpResponse(u"修改密码功能暂未开放")
