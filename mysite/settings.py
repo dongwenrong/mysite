@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'blog',
     'account',
     'password_reset',
+    'article',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,9 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "1581700118@qq.com"
 #EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 #EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
+
