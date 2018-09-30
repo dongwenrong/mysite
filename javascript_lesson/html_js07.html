@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<p id="demo"></p>
+<button onclick="reg1()">点我</button>
+<script>
+    function reg1() {
+        var str1 = "run abcd EFjk";
+        var x = str1.search(/EFjk/i);
+        document.getElementById("demo").innerHTML = x;
+    }
+</script>
+</body>
+</html>
