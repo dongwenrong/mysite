@@ -28,4 +28,7 @@ urlpatterns = [
     url(r'^account/', include('account.urls',namespace='account',app_name='account')),
     url(r'^pwd_reset/', include('password_reset.urls', namespace='pwd_reset', app_name='pwd_reset')),
     url(r'^article/', include('article.urls', namespace='article', app_name='article')),
+    url(r'^article/', include('article.urls', namespace='article', app_name='article')),
+    url(r'^article/', include('article.urls', namespace='article', app_name='article')),
+    url(r'^article/', include('article.urls', namespace='article', app_name='article')),
 ]
